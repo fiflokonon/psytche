@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class TypeForfait extends Model
 {
     use HasFactory;
+    protected $table = "type_forfaits";
+    protected $fillables = ["libelle", "statut"];
 }

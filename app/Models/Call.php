@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Call extends Model
 {
     use HasFactory;
+    protected $table = "calls";
+    protected $fillable = ["caller_id", "called_id", "duration","statut"];
 }

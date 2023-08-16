@@ -14,11 +14,12 @@ return new class extends Migration
         Schema::create('forfaits', function (Blueprint $table) {
             $table->id();
             $table->foreignId('type_forfait_id')->constrained("type_forfaits");
-            $table->integer('minutes');
-            $table->integer('minutes');
-            $table->integer('minutes');
-            $table->integer('minutes');
-            $table->integer('minutes');
+            $table->integer('nbrminutes');
+            $table->integer('validity');
+            $table->integer('price');
+            $table->integer('voice_hidden');
+            $table->string('libelle');
+            $table->string('code');
             $table->timestamps();
         });
     }

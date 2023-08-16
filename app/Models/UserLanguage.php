@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class UserLanguage extends Model
 {
     use HasFactory;
+    protected $table = "user_languages";
+    protected $fillables = ["user_id", "languague_id"];
 }
