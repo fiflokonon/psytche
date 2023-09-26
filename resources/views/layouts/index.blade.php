@@ -11,8 +11,7 @@
                         <div class="text-white">
                             <h6 class="text-uppercase mb-3 font-size-16 text-white">Orders</h6>
                             <h2 class="mb-4 text-white">1,587</h2>
-                            <span class="badge bg-info"> +11% </span> <span class="ms-2">From previous
-                                            period</span>
+                            <span class="badge bg-info"> +11% </span> <span class="ms-2">From previous period</span>
                         </div>
                     </div>
                 </div>

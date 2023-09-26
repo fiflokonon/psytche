@@ -306,88 +306,33 @@
                     <div class="collapse navbar-collapse" id="topnav-menu-content">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">
+                                <a class="nav-link" href="{{ route('dashboard') }}">
                                     <i class="ti-dashboard"></i>Dashboard
                                 </a>
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle arrow-none" href="layouts-horizontal.html#"
+                                <a class="nav-link dropdown-toggle arrow-none" href="#"
                                    id="topnav-email" role="button" data-toggle="dropdown" aria-haspopup="true"
                                    aria-expanded="false">
-                                    <i class="ti-email"></i>Email
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="topnav-email">
-                                    <a href="email-inbox.html" class="dropdown-item">Inbox</a>
-                                    <a href="email-read.html" class="dropdown-item">Email Read</a>
-                                    <a href="email-compose.html" class="dropdown-item">Email Compose</a>
-                                </div>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle arrow-none" href="layouts-horizontal.html#"
-                                   id="topnav-components" role="button" data-toggle="dropdown"
-                                   aria-haspopup="true" aria-expanded="false">
-                                    <i class="ti-support"></i>UI Elements
-                                </a>
-
-                                <div class="dropdown-menu mega-dropdown-menu px-2 dropdown-mega-menu-xl"
-                                     aria-labelledby="topnav-components">
-                                    <div class="row">
-                                        <div class="col-lg-4">
-                                            <div>
-                                                <a href="ui-alerts.html" class="dropdown-item">Alerts</a>
-                                                <a href="ui-buttons.html" class="dropdown-item">Buttons</a>
-                                                <a href="ui-badge.html" class="dropdown-item">Badge</a>
-                                                <a href="ui-cards.html" class="dropdown-item">Cards</a>
-                                                <a href="ui-carousel.html" class="dropdown-item">Carousel</a>
-                                                <a href="ui-dropdowns.html" class="dropdown-item">Dropdowns</a>
-                                                <a href="ui-utilities.html" class="dropdown-item">Utilities</a>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div>
-                                                <a href="ui-grid.html" class="dropdown-item">Grid</a>
-                                                <a href="ui-images.html" class="dropdown-item">Images</a>
-                                                <a href="ui-lightbox.html" class="dropdown-item">Lightbox</a>
-                                                <a href="ui-offcanvas.html" class="dropdown-item">Offcanvas</a>
-                                                <a href="ui-modals.html" class="dropdown-item">Modals</a>
-                                                <a href="ui-colors.html" class="dropdown-item">Colors</a>
-                                                <a href="ui-pagination.html"
-                                                   class="dropdown-item">Pagination</a>
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div>
-                                                <a href="ui-popover-tooltips.html" class="dropdown-item">Popover
-                                                    &amp; Tooltips</a>
-                                                <a href="ui-progressbars.html" class="dropdown-item">Progress
-                                                    Bars</a>
-                                                <a href="ui-sweet-alert.html"
-                                                   class="dropdown-item">Sweet-Alert</a>
-                                                <a href="ui-tabs-accordions.html" class="dropdown-item">Tabs
-                                                    &amp; Accordions</a>
-                                                <a href="ui-typography.html"
-                                                   class="dropdown-item">Typography</a>
-                                                <a href="ui-video.html" class="dropdown-item">Video</a>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </li>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle arrow-none" href="layouts-horizontal.html#"
-                                   id="topnav-forms" role="button" data-toggle="dropdown" aria-haspopup="true"
-                                   aria-expanded="false">
-                                    <i class="ti-receipt"></i>Forms
+                                    <i class="ti-user"></i>Utilisateurs
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-left" aria-labelledby="topnav-forms">
-                                    <a href="form-elements.html" class="dropdown-item">Form Elements</a>
-                                    <a href="form-validation.html" class="dropdown-item">Form Validation</a>
-                                    <a href="form-advanced.html" class="dropdown-item">Form Advanced</a>
-                                    <a href="form-editors.html" class="dropdown-item">Form Editors</a>
+                                    <a href="{{ route('userlist') }}" class="dropdown-item">Liste des utilisateurs</a>
+                                    <a href="{{ route('connected-userlist') }}" class="dropdown-item">Utilisateurs connectés</a>
+                                    <a href="form-xeditable.html" class="dropdown-item">Form Xeditable</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle arrow-none" href="#"
+                                   id="topnav-forms" role="button" data-toggle="dropdown" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    <i class="ti-receipt"></i>Forfaits
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-left" aria-labelledby="topnav-forms">
+                                    <a href="{{ route('packagelist') }}" class="dropdown-item">Liste des forfaits</a>
+                                    <a href="{{ route('type-packagelist') }}" class="dropdown-item">Types de forfaits</a>
+                                    <a href="{{ route('packagelist') }}" class="dropdown-item">Transactions liées aux forfaits</a>
                                     <a href="form-uploads.html" class="dropdown-item">Form File Upload</a>
                                     <a href="form-xeditable.html" class="dropdown-item">Form Xeditable</a>
                                 </div>
@@ -565,6 +510,4 @@
             </div>
         </div>
     </div>
-
-
 </header>
