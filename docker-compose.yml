@@ -1,0 +1,32 @@
+version: '3'
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: psytche
+        container_name: psytche-app
+        volumes:
+            - .:/var/www/html
+        ports:
+            - "8000:8000"
+        networks:
+            - laravel-net
+        depends_on:
+            - db
+    db:
+        image: postgres:13
+        environment:
+            POSTGRES_DB: psytche
+            POSTGRES_USER: testuser
+            POSTGRES_PASSWORD: udacity
+        volumes:
+            - db-data:/var/lib/postgresql/data
+        networks:
+            - laravel-net
+networks:
+    laravel-net:
+        driver: bridge
+
+volumes:
+    db-data:
